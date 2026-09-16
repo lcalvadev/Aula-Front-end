@@ -111,3 +111,30 @@ table{
     border: 0.00275rem solid #ffd607;
     border-radius: 0.5rem;
 }
+
+table th,
+table td{
+    padding: 0.5rem;
+    text-align: center;
+    border-right: 0.00275rem solid #ffd607;
+    border-bottom: 0.00275rem solid #ffd607;
+}
+
+table th:last-child,
+table td:last-child {
+    border-right: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+footer{
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d11a2a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
