@@ -78,3 +78,36 @@ nav a{
     border-radius: 0.25rem;
     margin: 0.25rem;
 }
+
+main {
+    padding: 1.5rem;
+    color: #ffffff;
+    background-color: #0b2545;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+section{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+section h2{
+    color: #ffd607
+}
+
+section p{
+    margin: 0.5rem;
+}
+
+section ul, section ol {
+    margin: 0.5rem 1rem;
+    padding-left: 1rem;
+}
+
+table{
+    width: 100%;
+    margin-top: 0.25rem;
+    border: 0.00275rem solid #ffd607;
+    border-radius: 0.5rem;
+}
