@@ -62,12 +62,17 @@ nav{
     border-top: 0.065rem solid rgba(255, 255, 255, 0.3);
 }
 
+nav ul {
+    list-style: none;
+}
+
 nav li{
     display: inline-block;
     margin: 0.25rem 0.5rem;
 }
 
 nav a{
+    display: block;
     background-color: #0b2545;
     padding: 0.375rem 0.75rem;
     border-radius: 0.25rem;
