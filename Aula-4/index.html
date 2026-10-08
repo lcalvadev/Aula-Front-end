@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Peneira de Futebol LEC</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <h1>Peneira LEC</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Inscreva-se para a peneira destinada ao LEC</h2>
+            <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+                <p>Preencha o formulário abaixo para participar da avaliação</p>
+
+                <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div>
+                    <label for="nome_id">Nome Completo:</label>
+                    <input id="nome_id" name="nome" type="text" placeholder="João da Silva Santos" minlength="3">
+                </div>
+
+                <div>
+                    <label for="nascimento_id">Data de nascimento:</label>
+                    <input id="nascimento_id" name="nascimento" type="date">
+                </div>
+
+                <!-- Campo com pattern -->
+                <div>
+                    <label for="cpf_id">CPF:</label>
+                    <input id="cpf_id" name="cpf" type="text" placeholder="000.000.000-00"
+                           pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$">
+                </div>
+
+                <!-- Campo required -->
+                <div>
+                    <label for="telefone_id">Telefone / WhatsApp:</label>
+                    <input id="telefone_id" name="telefone" type="tel" placeholder="(00) 00000-0000"
+                           pattern="^\(\d{2}\)\s?\d{4,5}-\d{4}$" required>
+                </div>
+
+                <div>
+                    <label for="email_id">Email do responsável:</label>
+                    <input id="email_id" name="email" type="email" placeholder="responsavel@exemplo.com">
+                </div>
+
+                <fieldset>
+                    <legend>Medidas</legend>
+                <div>
+                    <label for="altura_id">Altura (cm):</label>
+                    <input id="altura_id" name="altura" type="number" min="100" max="220" placeholder="175">
+                </div>
+                <div>
+                    <label for="peso_id">Peso (kg):</label>
+                    <input id="peso_id" name="peso" type="number" min="20" max="150" placeholder="68">
+                </div>
+                </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Clube atual</legend>
+                    <div>
+                        <label for="clube_id">Clube/escolinha:</label>
+                        <input id="clube_id" name="clube" type="text" placeholder="Time do Bairro FC">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Histórico esportivo</legend>
+                    <div>
+                        <label for="observacoes_id">Conquistas, clubes anteriores, lesões etc.</label>
+                        <textarea id="observacoes_id"
+                                    name="observacoes"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Posição principal</legend>
+                    <div>
+                        <input id="posicao_goleiro_id"
+                                name="posicao"
+                                type="radio"
+                                value="goleiro">
+                        <label for="posicao_goleiro_id">Goleiro</label>
+                    </div>
+                    <div>
+                        <input id="posicao_zagueiro_id"
+                                name="posicao"
+                                type="radio"
+                                value="zagueiro">
+                        <label for="posicao_zagueiro_id">Zagueiro</label>
+                    </div>
+                    <div>
+                        <input id="posicao_lateral_id"
+                                name="posicao"
+                                type="radio"
+                                value="lateral">
+                        <label for="posicao_lateral_id">Lateral</label>
+                    </div>
+                    <div>
+                        <input id="posicao_volante_id"
+                                name="posicao"
+                                type="radio"
+                                value="volante">
+                        <label for="posicao_volante_id">Volante</label>
+                    </div>
+                    <div>
+                        <input id="posicao_meia_id"
+                                name="posicao"
+                                type="radio"
+                                value="meia">
+                        <label for="posicao_meia_id">Meia</label>
+                    </div>
+                    <div>
+                        <input id="posicao_atacante_id"
+                                name="posicao"
+                                type="radio"
+                                value="atacante">
+                        <label for="posicao_atacante_id">Atacante</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiência e disponibilidade:</legend>
+                    <div>
+                        <input id="ja_jogou_id"
+                                name="experiencia"
+                                type="checkbox"
+                                value="clube_formador">
+                        <label for="ja_jogou_id">Já joguei em clube formador</label>
+                    </div>
+                    <div>
+                        <input id="viagem_id"
+                                name="experiencia"
+                                type="checkbox"
+                                value="disponivel_viagem">
+                        <label for="viagem_id">Disponível para viagens</label>
+                    </div>
+                </fieldset>
+
+
+            <fieldset>
+                <legend> Pé dominante</legend>
+                <div>
+                    <label for="pe_dominante_id">Pé:</label>
+                    <select id="pe_dominante_id" name="pe_dominante">
+                        <option value="destro">Destro</option>
+                        <option value="canhoto">Canhoto</option>
+                        <option value="ambidestro">Ambidestro</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <div>
+                <button type="reset">Limpar dados</button>
+                <button type="submit">Enviar inscrição</button>
+            </div>
+        </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy;</p>
+    </footer>
+</body>
+</html>
